@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/view.css') }}"
+    />
+    <title>Quản lý hàng không</title>
+  </head>
+  <body>
+    <h1>Thông tin chuyến bay</h1>
+    <table border="1">
+      <tr>
+        <th>Mã chuyến bay</th>
+        <th>Ga đi</th>
+        <th>Ga đến</th>
+        <th>Độ dài</th>
+        <th>Giờ đi</th>
+        <th>Giờ đến</th>
+        <th>Chi phí</th>
+      </tr>
+      {% for data in chuyenbay %}
+      <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td>{{data[2]}}</td>
+        <td>{{data[3]}}</td>
+        <td>{{data[4]}}</td>
+        <td>{{data[5]}}</td>
+        <td>{{data[6]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <hr />
+  </body>
+</html>

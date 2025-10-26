@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/view.css') }}"
+    />
+    <title>Quản lý hàng không</title>
+  </head>
+  <body>
+    <h1>Thông tin máy bay</h1>
+    <table border="1">
+      <tr>
+        <th>Mã máy bay</th>
+        <th>Loại</th>
+        <th>Tầm bay</th>
+      </tr>
+      {% for data in maybay %}
+      <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td>{{data[2]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <hr />
+  </body>
+</html>

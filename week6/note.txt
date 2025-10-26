@@ -1,0 +1,2 @@
+- API trả về dưới dạng json
+- XML lưu trữ dữ liệu lớn, một cách có cấu trúc

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cong viec</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>MADA</th>
+        <th>STT</th>
+        <th>TEN_CONG_VIEC</th>
+      </tr>
+      {% for data in congviec %}
+      <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td>{{data[2]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <hr />
+  </body>
+</html>

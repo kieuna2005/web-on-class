@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/input.css') }}"
+    />
+    <title>Quản lý hàng không</title>
+  </head>
+  <body>
+    <h1>Nhập thông tin chuyến bay</h1>
+    <form method="post" action="/input_chuyenbay_23001537">
+      <div class="info">
+        <table>
+          <tr>
+            <th>Mã chuyến bay</th>
+            <th>Ga đi</th>
+            <th>Ga đến</th>
+            <th>Độ dài</th>
+            <th>Giờ đi</th>
+            <th>Giờ đến</th>
+            <th>Chi phí</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="MaCB" /></td>
+            <td><input type="text" name="GaDi" /></td>
+            <td><input type="text" name="GaDen" /></td>
+            <td><input type="number" name="DoDai" /></td>
+            <td><input type="time" name="GioDi" /></td>
+            <td><input type="time" name="GioDen" /></td>
+            <td><input type="number" name="ChiPhi" /></td>
+          </tr>
+        </table>
+        <button type="submit">Thêm chuyến bay</button>
+      </div>
+      <!--
+      <label>Mã chuyến bay:</label>
+      <input type="text" name="MaCB" />
+      <label>Ga đi:</label>
+      <input type="text" name="GaDi" />
+      <label>Ga đến:</label>
+      <input type="text" name="GaDen" />
+      <label>Độ dài:</label>
+      <input type="number" name="DoDai" />
+      <label>Giờ đi:</label>
+      <input type="time" name="GioDi" />
+      <label>Giờ đến:</label>
+      <input type="time" name="GioDen" />
+      <label>Chi phí:</label>
+      <input type="number" name="ChiPhi" />
+      <button type="submit">Thêm chuyến bay</button>
+      -->
+    </form>
+  </body>
+</html>

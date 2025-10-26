@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/input.css') }}"
+    />
+    <title>Quản lý hàng không</title>
+  </head>
+  <body>
+    <h1>Nhập thông tin máy bay</h1>
+    <form method="post" action="/input_maybay_23001537">
+      <div class="info">
+        <table>
+          <tr>
+            <th>Mã máy bay</th>
+            <th>Loại</th>
+            <th>Tầm bay</th>
+          </tr>
+          <tr>
+            <td><input type="number" name="MaMB" /></td>
+            <td><input type="text" name="Loai" /></td>
+            <td><input type="number" name="TamBay" /></td>
+          </tr>
+        </table>
+        <button type="submit">Thêm máy bay</button>
+      </div>
+      <!--
+      <label>Mã máy bay:</label>
+      <input type="number" name="MaMB" />
+      <label>Loại:</label>
+      <input type="text" name="Loai" />
+      <label>Tầm bay:</label>
+      <input type="number" name="TamBay" />
+      <button type="submit">Thêm máy bay</button>
+      -->
+    </form>
+  </body>
+</html>

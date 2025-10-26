@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/input.css') }}"
+    />
+    <title>Quản lý hàng không</title>
+  </head>
+  <body>
+    <h1>Nhập thông tin chứng nhận</h1>
+    <form method="post" action="/input_chungnhan_23001537">
+      <!--
+      <label>Mã nhân viên:</label>
+      <input type="text" name="MaNV" />
+      <label>Mã máy bay:</label>
+      <input type="number" name="MaMB" />
+      <button type="submit">Thêm chứng nhận</button>
+      -->
+      <div class="info">
+        <table>
+          <tr>
+            <th>Mã nhân viên</th>
+            <th>Mã máy bay</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="MaNV" /></td>
+            <td><input type="number" name="MaMB" /></td>
+          </tr>
+        </table>
+        <button type="submit">Thêm chứng nhận</button>
+      </div>
+    </form>
+  </body>
+</html>

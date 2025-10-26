@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/view.css') }}"
+    />
+    <title>Quản lý hàng không</title>
+  </head>
+  <body>
+    <h1>Thông tin chứng nhận</h1>
+    <table border="1">
+      <tr>
+        <th>Mã nhân viên</th>
+        <th>Mã máy bay</th>
+      </tr>
+      {% for data in chungnhan %}
+      <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <hr />
+  </body>
+</html>
