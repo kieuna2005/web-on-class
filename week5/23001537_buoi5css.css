@@ -1,0 +1,93 @@
+/*Reset*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f5f5f5;
+  line-height: 1.5;
+}
+
+/*Tiêu đề chính*/
+h1 {
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/*Phần giới thiệu*/
+.introduction,
+.main-character,
+.episodes,
+.link-to-series {
+  width: 85%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Tiêu đề cho các phần*/
+h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/*Danh sách nhân vật chính*/
+.main-character ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-character li {
+  margin-bottom: 15px;
+  background: #ecf0f1;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/*bảng*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th {
+  background: #34495e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+  text-align: center;
+}
+
+/*poster*/
+.poster {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/*link xem phim*/
+.link-to-series a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #e74c3c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.link-to-series a:hover {
+  background: #502bc0;
+}

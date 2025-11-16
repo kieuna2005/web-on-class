@@ -11,18 +11,20 @@
   </head>
   <body>
     <h1>Thông tin chứng nhận</h1>
-    <table border="1">
-      <tr>
-        <th>Mã nhân viên</th>
-        <th>Mã máy bay</th>
-      </tr>
-      {% for data in chungnhan %}
-      <tr>
-        <td>{{data[0]}}</td>
-        <td>{{data[1]}}</td>
-      </tr>
-      {% endfor %}
-    </table>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Mã nhân viên</th>
+          <th>Mã máy bay</th>
+        </tr>
+        {% for data in chungnhan %}
+        <tr>
+          <td>{{data[0]}}</td>
+          <td>{{data[1]}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
     <hr />
   </body>
 </html>

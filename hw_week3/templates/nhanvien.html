@@ -11,20 +11,22 @@
   </head>
   <body>
     <h1>Thông tin nhân viên</h1>
-    <table border="1">
-      <tr>
-        <th>Mã nhân viên</th>
-        <th>Tên</th>
-        <th>Lương</th>
-      </tr>
-      {% for data in nhanvien %}
-      <tr>
-        <td>{{data[0]}}</td>
-        <td>{{data[1]}}</td>
-        <td>{{data[2]}}</td>
-      </tr>
-      {% endfor %}
-    </table>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Mã nhân viên</th>
+          <th>Tên</th>
+          <th>Lương</th>
+        </tr>
+        {% for data in nhanvien %}
+        <tr>
+          <td>{{data[0]}}</td>
+          <td>{{data[1]}}</td>
+          <td>{{data[2]}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
     <hr />
   </body>
 </html>
